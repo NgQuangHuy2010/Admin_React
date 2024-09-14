@@ -1,15 +1,24 @@
+.nav-menu{
+    padding: 0 12px;
+ 
+}
+
 .menu-item{
     display: flex;
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
     align-items: center;
-    padding: 8px;
+    padding: 7px 15px;
+    margin: 10px 0px;
+    border-radius: .5rem;
     transition: background ease-in-out 200ms;
     &.active{
-        color: rgb(238, 17, 17);
+        color: rgb(240, 235, 235);
+        background-color: #666CFF;
+    
     }
-    &:hover{
-        background-color: rgba(22,24,25,0.03);
+    &:not(.active):hover {
+        background-color: rgba(22, 24, 25, 0.03);
     }
 }
 .title{

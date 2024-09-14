@@ -1,7 +1,10 @@
+import classNames from "classnames/bind";
 import PropTypes from 'prop-types'
+import styles from './Menu.module.scss';
+const cx = classNames.bind(styles);
 function Menu({children}) {
     return (  
-        <nav>{children}</nav>
+        <nav className={cx('nav-menu')}>{children}</nav>
     );
 }
 Menu.propTypes ={

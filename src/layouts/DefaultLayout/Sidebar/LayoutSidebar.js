@@ -9,9 +9,11 @@ function Sidebar() {
   return (
   <aside className={cx('wrapper')}>
   <Menu>
-    <MenuItem title="For your" to={config.routes.home} icon={<i className="fa-solid fa-house"></i>}/>
-    <MenuItem title="Following" to={config.routes.following} icon={<i className="fa-solid fa-users"></i>}/>
-
+    <MenuItem title="Dashboard" to={config.routes.home} icon={<i className="fa-solid fa-house"></i>}/>
+    <MenuItem title="Tài khoản" to={config.routes.account}  icon={<i className="fa-solid fa-users"></i>}/>
+    <MenuItem title="Danh mục" to={config.routes.category}  icon={<i className="fa-solid fa-list"></i>}/>
+    <MenuItem title="Sản phẩm" to={config.routes.product} icon={<i className="fa-solid fa-warehouse"></i>}/>
+    
   </Menu>
 </aside>
 )

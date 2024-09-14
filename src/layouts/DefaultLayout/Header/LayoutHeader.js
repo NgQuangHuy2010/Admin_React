@@ -74,7 +74,7 @@ function Header() {
     <header className={cx("wrapper")}>
       <div className={cx("content")}>
         <div className={cx("logo")}>
-          <Link to={config.routes.home}><img src={images.logo} alt="imagelogo" /></Link>
+          <Link to={config.routes.home}><img src={images.logo} alt="imagelogo" style={{maxWidth:150}} /></Link>
         </div>
 
        {/* search */}

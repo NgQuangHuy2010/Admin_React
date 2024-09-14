@@ -1,6 +1,9 @@
 const routes ={
 home : '/',
-following :'/following',
+category :'/category',
+product:'/product',
+account:'/account',
+
 profile :'/:nickname',
 search :'/search'
 }

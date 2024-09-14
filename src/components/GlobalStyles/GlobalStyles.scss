@@ -5,17 +5,13 @@
   --white:#fff;
   --primary: #fe2c55;
   --default-layout-header-height:60px;
-  --default-layout-width:1150px;
+  --default-layout-width:100%;
   --default-layout-horizontal-spacer:24px;
 
 --black:#000;
 --text-color:#333;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 html {
   font-size: 62.5%;
@@ -26,7 +22,12 @@ body {
   font-style: normal;
   line-height: 1.5;
   overflow-y: overlay;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 //scrollbar 
 html *::-webkit-scrollbar {
   border-radius: 0;
