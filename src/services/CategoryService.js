@@ -10,3 +10,30 @@ export const getCategory = async () => {
     }
 };
 
+
+export const createCategory = async (data) => {
+    try {
+        const formData = new FormData();
+        formData.append("name", data.name);
+        formData.append("image", data.image); 
+        
+        const res = await request.post('category', formData, {
+            headers: { "Content-Type": "multipart/form-data" },
+        });
+        
+        return res.data; 
+    } catch (error) {
+        console.error("Failed to create category:", error);
+        throw error;
+    }
+};
+
+export const deleteCategory = async (id) => {
+    try {
+        const res = await request.del(`category/${id}`); // Using the del method
+        return res.data;
+    } catch (error) {
+        console.error("Failed to delete category:", error);
+        throw error;
+    }
+};

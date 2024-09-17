@@ -66,7 +66,7 @@ function Search() {
           spellCheck={false}
           
           onChange={handleChange}
-          onFocus={() => setShowResult(true)}
+          // onFocus={() => setShowResult(true)}
         />
         {/* khi có value mới hiện button xóa */}
         {!!searchValue && (

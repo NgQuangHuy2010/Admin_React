@@ -8,5 +8,14 @@ const httpRequest = axios.create({
 export const get = async (url,options={})=>{
     const response =await httpRequest.get(url,options);
     return response.data;
+    
 }
+export const post = async (url, data, config = {}) => {
+    return await httpRequest.post(url, data, config);
+};
+export const del = async (url, config = {}) => {  
+    return await httpRequest.delete(url, config);
+};
+
+
 export default httpRequest

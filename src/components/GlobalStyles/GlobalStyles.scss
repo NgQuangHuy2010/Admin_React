@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 
@@ -59,3 +60,9 @@ body{
     font-weight: 400;
   }
 } 
+
+
+//config cho dialog modal preview image ko bị ẩn sau modal
+.p-dialog-mask {
+  z-index: 1000 !important; /* Use a higher value as needed */
+}
